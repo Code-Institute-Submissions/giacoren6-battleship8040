@@ -1,5 +1,5 @@
 # Battleship-8040
-Ultimate Battleships is a Python game terminal, which runs on Heroku,
+ Battleship- 8040 is a Python game terminal, which runs on Heroku,
 Users can try to beat the computer by finding all of the computer's battleships before the computer finds theirs. Each
 battleship occupies one square on the board.
 
@@ -62,10 +62,10 @@ o some error were returned from [PEP8online.com](https://pep8ci.herokuapp.com/#)
 ## Deployment
 - This project was deployed using Code Institute's mock terminal for Heroku.
 - Steps for deployment:
---  Fork or clone this repository
---  Create a new Heroku app
---  Set the buildbacks to Python and Nodes in that order
--- Link the Heroku app to the repository
+-  Fork or clone this repository
+-  Create a new Heroku app
+-  Set the buildbacks to Python and Nodes in that order
+-  ink the Heroku app to the repository
  o Click on Deploy
 ## Credits
 - Code Institute for the deployment terminal
