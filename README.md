@@ -29,6 +29,13 @@ The winner is the player who sinks all of their opponent's battleships first.
  - check your score
  - choose the user input
 
+<img width="250" alt="Screenshot 2024-01-01 at 18 18 52" src="https://github.com/giacoren6/battleship8040/assets/142323106/1f5ea93c-d24f-426b-826e-f2e2bf982a1b">
+
+
+
+
+
+
 
 
 
