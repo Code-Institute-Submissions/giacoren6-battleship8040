@@ -31,8 +31,45 @@ The winner is the player who sinks all of their opponent's battleships first.
 
 <img width="250" alt="Screenshot 2024-01-01 at 18 18 52" src="https://github.com/giacoren6/battleship8040/assets/142323106/1f5ea93c-d24f-426b-826e-f2e2bf982a1b">
 
+Future Features 
+- Allow player to select the board size and number of ships manually
+- Allow player to position ships by themselves manually 
+- Have more ships avalible to let expand the game
+
+## Data Model
+- I decided to use a Board class as my model. The game creates one Board class to hold the player's and
+- the computer's board.
+- The print_board class stores the board size, the letter between A and I ,and the row number,
+- The class ship_create in ship range of 6,
+- class ship_location i've put a row number between 1 to 9,
+- class count_hit and the class ship_create where i've decided to put 10 turns for the game.
+
+# Testing
+- I have manually tested this project by doing the following:
+- Passed the code through a PEP8 linter and confirmed there are some errors but no warning
+- Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
+- Tested in my local terminal and the Code Institute Heroku terminal
+
+# Bugs
+No bugs find it 
+## Remaining Bugs
+- No bugs remaining
+## Validator Testing
+PEP8
+o some error were returned from [PEP8online.com](https://pep8ci.herokuapp.com/#)
 
 
+## Deployment
+- This project was deployed using Code Institute's mock terminal for Heroku.
+- Steps for deployment:
+--  Fork or clone this repository
+--  Create a new Heroku app
+--  Set the buildbacks to Python and Nodes in that order
+-- Link the Heroku app to the repository
+ o Click on Deploy
+## Credits
+- Code Institute for the deployment terminal
+- Wikipedia for the details of the Battleships game
 
 
 
