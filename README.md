@@ -23,6 +23,13 @@ The winner is the player who sinks all of their opponent's battleships first.
 - The player can't see where the computer's ships are
 - Ships are randomly placed on both of the lines of the player and computer boards
 
+ <img width="1265" alt="Screenshot 2024-01-01 at 18 14 33" src="https://github.com/giacoren6/battleship8040/assets/142323106/4515bb68-25bc-4ec8-89f4-7ceb53bf9259">
+
+ - Play against the computer
+ - check your score
+ - choose the user input
+
+
 
 
 
