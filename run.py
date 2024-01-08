@@ -69,3 +69,10 @@ def count_hit(board):
             if column == 'X':
                 count += 1
     return count
+
+
+"""class winner and loser"""
+
+
+def game_over_and_win():
+    pass
