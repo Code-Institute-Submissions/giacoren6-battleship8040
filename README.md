@@ -46,7 +46,7 @@ Future Features
 
 # Testing
 - I have manually tested this project by doing the following:
-- Passed the code through a PEP8 linter and confirmed there are some errors but no warning
+- Passed the code through a PEP8 linter and confirmed there are no errors.
 - Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
 - Tested in my local terminal and the Code Institute Heroku terminal
 
@@ -56,7 +56,8 @@ No bugs find it
 - No bugs remaining
 ## Validator Testing
 PEP8
-o some error were returned from [PEP8online.com](https://pep8ci.herokuapp.com/#)
+<img width="1459" alt="Screenshot 2024-01-08 at 14 37 21" src="https://github.com/giacoren6/battleship8040/assets/142323106/0a9ecebc-9a0b-4342-9490-1457906775e2">
+No errors fin in [PEP8online.com](https://pep8ci.herokuapp.com/#)
 
 
 ## Deployment
