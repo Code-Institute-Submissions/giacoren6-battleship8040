@@ -76,3 +76,30 @@ def count_hit(board):
 
 def game_over_and_win():
     pass
+
+
+ship_create(BOARD_GAME_HIDDEN)
+turns = 10
+game_over = False
+while turns > 0:
+    print('Welcome to Battleship-8040')
+    print_board(GAME_GUESS_BOARD)
+    row, column = get_ship_location()
+    if GAME_GUESS_BOARD[row][column] == '-':
+        print('You already guessed it')
+    elif BOARD_GAME_HIDDEN[row][column] == 'X':
+        print('Congratulations')
+        GAME_GUESS_BOARD[row][column] = 'X'
+        turns -= 1
+    else:
+        print('You Missed')
+        GAME_GUESS_BOARD[row][column] = '-'
+        turns -= 1
+    if count_hit(GAME_GUESS_BOARD) == 6:
+        print('Congrats You Win !!!')
+    game_over = True
+    print('You have ' + str(turns) + ' Remaining turns')
+    if turns == 0:
+        print('Game Over')
+game_over = True
+run()
