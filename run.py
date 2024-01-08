@@ -58,3 +58,14 @@ def get_ship_location():
         column = input('Enter a ship column  A-I:').upper()
     return int(row) - 1, letter_for_number[column]
 
+
+"""class hit board count"""
+
+
+def count_hit(board):
+    count = 0
+    for row in board:
+        for column in row:
+            if column == 'X':
+                count += 1
+    return count
