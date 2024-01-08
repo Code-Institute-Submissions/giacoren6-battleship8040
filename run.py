@@ -33,3 +33,13 @@ def print_board(board):
         print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
 
+
+"""class ship create """
+
+
+def ship_create(board):
+    for ship in range(6):
+        ship_row, ship_column = randint(0, 8), randint(0, 8)
+        while board[ship_row][ship_column] == 'X':
+            ship_row, ship_column = randint(0, 8), randint(0, 8)
+        board[ship_row][ship_column] = 'X'
