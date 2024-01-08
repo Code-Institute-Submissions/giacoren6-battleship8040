@@ -43,3 +43,18 @@ def ship_create(board):
         while board[ship_row][ship_column] == 'X':
             ship_row, ship_column = randint(0, 8), randint(0, 8)
         board[ship_row][ship_column] = 'X'
+
+
+"""class location ship"""
+
+
+def get_ship_location():
+    row = input('Enter a ship row 1-9:')
+    while row not in '1 2 3 4 5 6 7 8 9':
+        print('Enter a valid row')
+        row = input('Enter a ship row 1-9')
+    column = input('Enter a ship column  A-I:').upper()
+    while column not in 'ABCDEFGHI':
+        column = input('Enter a ship column  A-I:').upper()
+    return int(row) - 1, letter_for_number[column]
+
