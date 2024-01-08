@@ -18,6 +18,7 @@ The player and the computer then take it in turns to make guesses and try to sin
 The winner is the player who sinks all of their opponent's battleships first.
 
 ## Features 
+
 ## Existing Features
 -  Generation Random board 
 - The player can't see where the computer's ships are
@@ -35,6 +36,11 @@ Future Features
 - Allow player to select the board size and number of ships manually
 - Allow player to position ships by themselves manually 
 - Have more ships avalible to let expand the game
+
+## Technologies Used
+
+### Languages Used
+[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Data Model
 - I decided to use a Board class as my model. The game creates one Board class to hold the player's and
