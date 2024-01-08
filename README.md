@@ -63,7 +63,7 @@ No bugs find it
 ## Validator Testing
 PEP8
 <img width="1459" alt="Screenshot 2024-01-08 at 14 37 21" src="https://github.com/giacoren6/battleship8040/assets/142323106/0a9ecebc-9a0b-4342-9490-1457906775e2">
-No errors fin in [PEP8online.com](https://pep8ci.herokuapp.com/#)
+No errors find in [PEP8online.com](https://pep8ci.herokuapp.com/#)
 
 
 ## Deployment
