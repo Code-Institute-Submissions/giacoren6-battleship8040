@@ -21,4 +21,15 @@ letter_for_number = {'A': 0,
                      'H': 7,
                      'I': 8
                      }
+"""class print board"""
+
+
+def print_board(board):
+    print('  A B C D E F G H I')
+    print(' -------------------')
+    row_number = 1
+    """for loop"""
+    for row in board:
+        print("%d|%s|" % (row_number, "|".join(row)))
+        row_number += 1
 
