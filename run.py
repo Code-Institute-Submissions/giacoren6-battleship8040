@@ -7,6 +7,25 @@
 # ' ' for avalible space
 # '-' for missed shot
 
+
+introduction = 'Welcome to Battleship-8040'
+print(introduction)
+
+input('Press Enter to start the game:')
+print('You have 10 turns to hit the battleship')
+print('The battleship is 8 cells long')
+print('The battleship is hidden in a 9x9 board')
+print('The board is labeled with numbers 1-9 and letters A-I')
+print('You will enter the row and column to hit the battleship')
+print('If you hit the battleship, you will see an X')
+print('If you miss the battleship, you will see a -')
+print('You can only hit each cell once')
+print('You win by hitting the battleship 6 times')
+print('Good luck')
+
+name = input('Enter your name:')
+print('Hello ' + name)
+
 from random import randint
 """game boards"""
 BOARD_GAME_HIDDEN = [[' '] * 9 for x in range(9)]
@@ -21,7 +40,7 @@ letter_for_number = {'A': 0,
                      'H': 7,
                      'I': 8
                      }
-"""class print board"""
+"""Function print board"""
 
 
 def print_board(board):
@@ -34,7 +53,7 @@ def print_board(board):
         row_number += 1
 
 
-"""class ship create """
+"""Function ship create """
 
 
 def ship_create(board):
@@ -102,4 +121,6 @@ while turns > 0:
     if turns == 0:
         print('Game Over')
 game_over = True
-run()
+print('Game Over')
+
+
