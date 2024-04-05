@@ -12,7 +12,6 @@ introduction = 'Welcome to Battleship-8040'
 print(introduction)
 
 input('Press Enter to start the game:')
-print('You have 10 turns to hit the battleship')
 print('The battleship is 8 cells long')
 print('The battleship is hidden in a 9x9 board')
 print('The board is labeled with numbers 1-9 and letters A-I')
@@ -64,7 +63,7 @@ def ship_create(board):
         board[ship_row][ship_column] = 'X'
 
 
-"""class location ship"""
+"""Function location ship"""
 
 
 def get_ship_location():
@@ -78,7 +77,7 @@ def get_ship_location():
     return int(row) - 1, letter_for_number[column]
 
 
-"""class hit board count"""
+"""Function hit board count"""
 
 
 def count_hit(board):
@@ -90,7 +89,7 @@ def count_hit(board):
     return count
 
 
-"""class winner and loser"""
+"""Function winner and loser"""
 
 
 def game_over_and_win():
