@@ -27,8 +27,8 @@ print('Hello ' + name)
 
 from random import randint
 """game boards"""
-BOARD_GAME_HIDDEN = [[' '] * 9 for x in range(9)]
-GAME_GUESS_BOARD = [[' '] * 9 for x in range(9)]
+BOARD_GAME_HIDDEN = [[' '] * 9 for _ in range(9)]
+GAME_GUESS_BOARD = [[' '] * 9 for _ in range(9)]
 letter_for_number = {'A': 0,
                      'B': 1,
                      'C': 2,
@@ -50,13 +50,24 @@ def print_board(board):
     for row in board:
         print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
+    print(' -------------------')
+
+
+"""Function compare board"""
+
+def compare_board(board1, board2):
+    for row in range(9):
+        for column in range(9):
+            if board1[row][column] != board2[row][column]:
+                return False
+    return True
 
 
 """Function ship create """
 
 
 def ship_create(board):
-    for ship in range(6):
+    for _ in range(6):
         ship_row, ship_column = randint(0, 8), randint(0, 8)
         while board[ship_row][ship_column] == 'X':
             ship_row, ship_column = randint(0, 8), randint(0, 8)
@@ -70,7 +81,7 @@ def get_ship_location():
     row = input('Enter a ship row 1-9:')
     while row not in '1 2 3 4 5 6 7 8 9':
         print('Enter a valid row')
-        row = input('Enter a ship row 1-9')
+        row = input('Enter a ship row 1-9:')
     column = input('Enter a ship column  A-I:').upper()
     while column not in 'ABCDEFGHI':
         column = input('Enter a ship column  A-I:').upper()
@@ -121,5 +132,6 @@ while turns > 0:
         print('Game Over')
 game_over = True
 print('Game Over')
+
 
 
