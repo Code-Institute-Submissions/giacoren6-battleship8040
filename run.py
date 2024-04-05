@@ -41,6 +41,7 @@ letter_for_number = {'A': 0,
                      }
 """Function print board"""
 
+print('board of:' + name)
 
 def print_board(board):
     print('  A B C D E F G H I')
@@ -51,16 +52,6 @@ def print_board(board):
         print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
     print(' -------------------')
-
-
-"""Function compare board"""
-
-def compare_board(board1, board2):
-    for row in range(9):
-        for column in range(9):
-            if board1[row][column] != board2[row][column]:
-                return False
-    return True
 
 
 """Function ship create """
@@ -75,20 +66,18 @@ def ship_create(board):
 
 
 """Function location ship"""
-
-
 def get_ship_location():
-    row = input('Enter a ship row 1-9:')
-    while row not in '1 2 3 4 5 6 7 8 9':
-        print('Enter a valid row')
-        row = input('Enter a ship row 1-9:')
-    column = input('Enter a ship column  A-I:').upper()
-    while column not in 'ABCDEFGHI':
-        column = input('Enter a ship column  A-I:').upper()
-    return int(row) - 1, letter_for_number[column]
-
-
-"""Function hit board count"""
+    while True : 
+        try: 
+            row = int(input('Enter the row number: 1-9 : '))
+            column = input('Enter the column letter: A-I :')
+            column = letter_for_number[column.upper()]
+            if row < 1 or row > 9 or column < 0 or column > 8:
+                print('Invalid input. Try again')
+            else:
+                return row - 1, column
+        except ValueError:
+            print("Invalid input. Please enter a valid row number and column letter.")
 
 
 def count_hit(board):
@@ -131,7 +120,3 @@ while turns > 0:
     if turns == 0:
         print('Game Over')
 game_over = True
-print('Game Over')
-
-
-
