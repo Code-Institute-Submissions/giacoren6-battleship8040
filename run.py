@@ -69,7 +69,7 @@ def ship_create(board):
 def get_ship_location():
     while True : 
         try: 
-            row = int(input('Enter the row number: 1-9 : '))
+            row = int(input('Enter the row number: 1-9 :'))
             column = input('Enter the column letter: A-I :')
             column = letter_for_number[column.upper()]
             if row < 1 or row > 9 or column < 0 or column > 8:
@@ -78,7 +78,7 @@ def get_ship_location():
                 return row - 1, column
         except ValueError:
             print("Invalid input. Please enter a valid row number and column letter.")
-
+            continue
 
 def count_hit(board):
     count = 0
