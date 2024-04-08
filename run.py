@@ -79,6 +79,7 @@ def get_ship_location():
                 return row - 1, column
         except ValueError:
             print("Invalid input. Please enter a valid row number and column letter.")
+            print("Row number must be between 1-9 and column letter must be between A-I.")
             continue
 
 
