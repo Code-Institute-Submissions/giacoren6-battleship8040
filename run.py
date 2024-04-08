@@ -74,11 +74,13 @@ def get_ship_location():
             column = letter_for_number[column.upper()]
             if row < 1 or row > 9 or column < 0 or column > 8:
                 print('Invalid input. Try again')
+                continue
             else:
                 return row - 1, column
         except ValueError:
             print("Invalid input. Please enter a valid row number and column letter.")
             continue
+
 
 def count_hit(board):
     count = 0
