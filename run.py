@@ -96,48 +96,42 @@ def count_hit(board):
 
 """Function winner and loser"""
  
-# Assuming the necessary functions and variables are defined elsewhere
-# ship_create(BOARD_GAME_HIDDEN)
-# BOARD_GAME_HIDDEN, GAME_GUESS_BOARD = ..., ...
-# def get_ship_location(): ...
-# def count_hit(board): ...
- 
-
+# Assuming BOARD_GAME_HIDDEN and GAME_GUESS_BOARD are defined somewhere else in the code
+# Assuming ship_create, print_board, get_ship_location, and count_hit are defined functions
 ship_create(BOARD_GAME_HIDDEN)
 turns = 10
 game_over = False
-
-while not game_over:
+while True:
     print('Welcome to Battleship-8040')
     print_board(GAME_GUESS_BOARD)
-    print('You have ' + str(turns) + ' turns remaining')
+    print('You have ' + str(turns) + ' turns remaining') # type: ignore
     row, column = get_ship_location()
     if GAME_GUESS_BOARD[row][column] == '-':
         print('You already guessed it')
     elif BOARD_GAME_HIDDEN[row][column] == 'X':
         print('Congratulations')
         GAME_GUESS_BOARD[row][column] = 'X'
-        turns -= 1
+        turns -= 1 # type: ignore
     else:
         print('You Missed')
         GAME_GUESS_BOARD[row][column] = '-'
-        turns -= 1
+        turns -= 1 # type: ignore
  
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
         game_over = True
-    elif turns == 0:
+    elif turns == 0: # type: ignore
         print('Game Over')
         game_over = True
  
     if not game_over:
-        print('You have ' + str(turns) + ' Remaining turns')
+        print('You have ' + str(turns) + ' Remaining turns') # type: ignore
         print('Try Again')
     else:
-        print('The ship was located at:')
+        print('Game Over')
+        print('The ship was hidden at:')
         print_board(BOARD_GAME_HIDDEN)
-        print('Your guesses:')
+        print('Your guesses were:')
         print_board(GAME_GUESS_BOARD)
         print('Thanks for playing')
-        print('Goodbye' + name)
-        break  
+        break
