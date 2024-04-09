@@ -1,7 +1,5 @@
 # Battleship-8040
- Battleship- 8040 is a Python game terminal, which runs on Heroku,
-Users can try to beat the computer by finding all of the computer's battleships before the computer finds theirs. Each
-battleship occupies one square on the board.
+Battleship-8040 is a Python game terminal, which runs on Heroku,The User can try to beat the computer by finding all of the computer's battleships, The user have 10 rounds to find the computer's battleships, The user have 6 rounds to defeat the computer,Each battleship occupies one square on the board.
 
 Here is the live project, [Battleship8040](https://battleship8040-71d219516351.herokuapp.com/)
 
