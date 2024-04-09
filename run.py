@@ -27,8 +27,8 @@ print('Hello ' + name)
 
 from random import randint
 """game boards"""
-BOARD_GAME_HIDDEN = [[' '] * 9 for _ in range(9)]
-GAME_GUESS_BOARD = [[' '] * 9 for _ in range(9)]
+BOARD_GAME_HIDDEN = [[' '] * 8 for _ in range(8)]
+GAME_GUESS_BOARD = [[' '] * 8 for _ in range(8)]
 letter_for_number = {'A': 0,
                      'B': 1,
                      'C': 2,
@@ -69,18 +69,19 @@ def ship_create(board):
 def get_ship_location():
     while True : 
         try: 
-            row = int(input('Enter the row number: 1-9 :'))
+            row = int(input('Enter the row number: 1-8 :'))
             column = input('Enter the column letter: A-I :')
             column = letter_for_number[column.upper()]
-            if row < 1 or row > 9 or column < 0 or column > 8:
+            if row < 1 or row > 8 or column < 0 or column > 8:
                 print('Invalid input. Try again')
                 continue
             else:
                 return row - 1, column
         except ValueError:
             print("Invalid input. Please enter a valid row number and column letter.")
-            print("Row number must be between 1-9 and column letter must be between A-I.")
             continue
+        except KeyError:
+            print("Invalid input. Please enter a valid row number and column letter.")
 
 
 def count_hit(board):
@@ -123,3 +124,8 @@ while turns > 0:
     if turns == 0:
         print('Game Over')
 game_over = True
+
+print('Game Over: '+ name)
+print_board(BOARD_GAME_HIDDEN)
+print_board(GAME_GUESS_BOARD)
+print('Thank you for playing Battleship-8040')
