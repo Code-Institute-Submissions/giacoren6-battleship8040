@@ -98,10 +98,6 @@ def count_hit(board):
 """Function winner and loser"""
 
 
-def game_over_and_win():
-    pass
-
-
 ship_create(BOARD_GAME_HIDDEN)
 turns = 10
 game_over = False
@@ -127,18 +123,16 @@ while turns > 0:
         print('Game Over')
 game_over = True
 
-
-"""Function game over and win"""
-
 def game_over_and_win():
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
     else:
         print('Game Over')
-game_over_and_win()
+    print('The ship was at:')
+    print_board(BOARD_GAME_HIDDEN)
+    print('Your guesses:')
+    print_board(GAME_GUESS_BOARD)
+    print('Thanks for playing Battleship-8040')
+    print('Goodbye ' + name)
 
-end = input('Press Enter to see the battleship location:')
-print('The battleship was hidden at:')
-print_board(BOARD_GAME_HIDDEN)
-print('Thanks for playing Battleship-8040')
-print('Goodbye ' + name)
+game_over_and_win()
