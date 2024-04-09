@@ -72,7 +72,8 @@ The winner is the player who sinks all of their opponent's battleships first.
  - check your score
  - choose the user input
 
-<img width="250" alt="Screenshot 2024-01-01 at 18 18 52" src="https://github.com/giacoren6/battleship8040/assets/142323106/1f5ea93c-d24f-426b-826e-f2e2bf982a1b">
+<img width="732" alt="Screenshot 2024-04-09 at 23 41 26" src="https://github.com/giacoren6/battleship8040/assets/142323106/07534470-ffd3-4ec8-b16e-0e79453bab14">
+
 
 Future Features 
 - Allow player to select the board size and number of ships manually
