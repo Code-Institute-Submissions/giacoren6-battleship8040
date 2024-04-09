@@ -27,8 +27,8 @@ print('Hello ' + name)
 
 from random import randint
 """game boards"""
-BOARD_GAME_HIDDEN = [[' '] * 8 for _ in range(8)]
-GAME_GUESS_BOARD = [[' '] * 8 for _ in range(8)]
+BOARD_GAME_HIDDEN = [[' '] * 9 for _ in range(9)]
+GAME_GUESS_BOARD = [[' '] * 9 for _ in range(9)]
 letter_for_number = {'A': 0,
                      'B': 1,
                      'C': 2,
@@ -59,9 +59,9 @@ def print_board(board):
 
 def ship_create(board):
     for _ in range(6):
-        ship_row, ship_column = randint(0, 8), randint(0, 8)
+        ship_row, ship_column = randint(0, 8), randint(0, 9)
         while board[ship_row][ship_column] == 'X':
-            ship_row, ship_column = randint(0, 8), randint(0, 8)
+            ship_row, ship_column = randint(0, 8), randint(0, 9)
         board[ship_row][ship_column] = 'X'
 
 
@@ -69,10 +69,10 @@ def ship_create(board):
 def get_ship_location():
     while True : 
         try: 
-            row = int(input('Enter the row number: 1-8 :'))
+            row = int(input('Enter the row number: 1-9 :'))
             column = input('Enter the column letter: A-I :')
             column = letter_for_number[column.upper()]
-            if row < 1 or row > 8 or column < 0 or column > 8:
+            if row < 1 or row > 9 or column < 0 or column > 8:
                 print('Invalid input. Try again')
                 continue
             else:
@@ -125,4 +125,13 @@ while turns > 0:
         print('Game Over')
 game_over = True
 
-print('Game Over: Thank you for playing Battleship-8040')
+"""Function game over and win"""
+
+def game_over_and_win():
+    if count_hit(GAME_GUESS_BOARD) == 6:
+        print('Congrats You Win !!!')
+    else:
+        print('Game Over')
+game_over_and_win()
+print_board(BOARD_GAME_HIDDEN)
+print('Thanks for playing Battleship-8040')
