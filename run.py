@@ -125,12 +125,4 @@ while turns > 0:
         print('Game Over')
 game_over = True
 
-def game_over_and_win():
-    if count_hit(GAME_GUESS_BOARD) == 6:
-        return True
-    if turns == 0:
-        return True
-    return False
-game_over_and_win()
-
 print('Game Over: Thank you for playing Battleship-8040')
