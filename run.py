@@ -39,6 +39,8 @@ letter_for_number = {'A': 0,
                      'H': 7,
                      'I': 8
                      }
+
+
 """Function print board"""
 
 print('board of:' + name)
@@ -125,6 +127,7 @@ while turns > 0:
         print('Game Over')
 game_over = True
 
+
 """Function game over and win"""
 
 def game_over_and_win():
@@ -133,5 +136,9 @@ def game_over_and_win():
     else:
         print('Game Over')
 game_over_and_win()
+
+end = input('Press Enter to see the battleship location:')
+print('The battleship was hidden at:')
 print_board(BOARD_GAME_HIDDEN)
 print('Thanks for playing Battleship-8040')
+print('Goodbye ' + name)
