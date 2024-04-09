@@ -3,7 +3,7 @@ Battleship-8040 is a Python game terminal, which runs on Heroku,The User can try
 
 Here is the live project, [Battleship8040](https://battleship8040-71d219516351.herokuapp.com/)
 
-<img width="1265" alt="Screenshot 2024-01-01 at 17 52 27" src="https://github.com/giacoren6/battleship8040/assets/142323106/dea73ff8-fe25-412f-8024-87ae302c99cb">
+<img width="1453" alt="Screenshot 2024-04-09 at 14 20 43" src="https://github.com/giacoren6/battleship8040/assets/142323106/4db42904-1568-40ae-9df5-1d59ff0b66ef">
 
 ## How to play the game
 
