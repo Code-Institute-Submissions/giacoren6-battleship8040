@@ -102,12 +102,15 @@ def count_hit(board):
 # def get_ship_location(): ...
 # def count_hit(board): ...
  
+
+ship_create(BOARD_GAME_HIDDEN)
 turns = 10
 game_over = False
- 
+
 while not game_over:
     print('Welcome to Battleship-8040')
     print_board(GAME_GUESS_BOARD)
+    print('You have ' + str(turns) + ' turns remaining')
     row, column = get_ship_location()
     if GAME_GUESS_BOARD[row][column] == '-':
         print('You already guessed it')
@@ -130,3 +133,11 @@ while not game_over:
     if not game_over:
         print('You have ' + str(turns) + ' Remaining turns')
         print('Try Again')
+    else:
+        print('The ship was located at:')
+        print_board(BOARD_GAME_HIDDEN)
+        print('Your guesses:')
+        print_board(GAME_GUESS_BOARD)
+        print('Thanks for playing')
+        print('Goodbye' + name)
+        break  
