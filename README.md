@@ -79,6 +79,9 @@ The winner is the player who sinks all of their opponent's battleships first.
 <img width="728" alt="Screenshot 2024-04-09 at 23 49 31" src="https://github.com/giacoren6/battleship8040/assets/142323106/b1189579-2fbc-4533-960e-018ea110be0c">
 
   - Once the game finish the player can see the proper guess location board
+ 
+<img width="732" alt="Screenshot 2024-04-09 at 23 57 05" src="https://github.com/giacoren6/battleship8040/assets/142323106/7fb26ad9-f916-415e-b087-2417c3397393">
+
 
 
 
