@@ -82,6 +82,10 @@ The winner is the player who sinks all of their opponent's battleships first.
  
 <img width="732" alt="Screenshot 2024-04-09 at 23 57 05" src="https://github.com/giacoren6/battleship8040/assets/142323106/7fb26ad9-f916-415e-b087-2417c3397393">
 
+ - input validation and error
+ - the player need to put a number 1 to 9 if are not those will be an error
+ - the player need to put a column A to I if are not those will be an error
+
 
 
 
