@@ -61,9 +61,9 @@ def print_board(board):
 
 def ship_create(board):
     for _ in range(6):
-        ship_row, ship_column = randint(0, 8), randint(0, 9)
+        ship_row, ship_column = randint(0, 8), randint(0, 8)
         while board[ship_row][ship_column] == 'X':
-            ship_row, ship_column = randint(0, 8), randint(0, 9)
+            ship_row, ship_column = randint(0, 8), randint(0, 8)
         board[ship_row][ship_column] = 'X'
 
 
@@ -94,36 +94,33 @@ def count_hit(board):
                 count += 1
     return count
 
-"""Function winner and loser"""
- 
 # Assuming BOARD_GAME_HIDDEN and GAME_GUESS_BOARD are defined somewhere else in the code
 # Assuming ship_create, print_board, get_ship_location, and count_hit are defined functions
 ship_create(BOARD_GAME_HIDDEN)
 turns = 10
 game_over = False
-while True:
+while not game_over and turns > 0:
     print('Welcome to Battleship-8040')
     print_board(GAME_GUESS_BOARD)
     print('You have ' + str(turns) + ' turns remaining') # type: ignore
     row, column = get_ship_location()
     if GAME_GUESS_BOARD[row][column] == '-':
         print('You already guessed it')
+        continue
     elif BOARD_GAME_HIDDEN[row][column] == 'X':
         print('Congratulations')
         GAME_GUESS_BOARD[row][column] = 'X'
-        turns -= 1 # type: ignore
+    
     else:
         print('You Missed')
         GAME_GUESS_BOARD[row][column] = '-'
-        turns -= 1 # type: ignore
- 
+    turns -= 1 # type: ignore
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
         game_over = True
-    elif turns == 0: # type: ignore
-        print('Game Over')
+    elif turns == 0:
+        print('Game Over. You ran out of turns.')
         game_over = True
- 
     if not game_over:
         print('You have ' + str(turns) + ' Remaining turns') # type: ignore
         print('Try Again')
