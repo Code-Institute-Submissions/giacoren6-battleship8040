@@ -5,12 +5,54 @@ Here is the live project, [Battleship8040](https://battleship8040-71d219516351.h
 
 <img width="1453" alt="Screenshot 2024-04-09 at 14 20 43" src="https://github.com/giacoren6/battleship8040/assets/142323106/4db42904-1568-40ae-9df5-1d59ff0b66ef">
 
+## User Experience (UX)
+
+-   ### User stories
+
+    -   #### First Time Visitor Goals
+
+        1. As a First Time Visitor, I want to easily understand the main purpose of the Game.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the Game.
+        3. As a First Time Visitor, I want to look for testimonials to understand what Talk about this Game and check if is trusted.
+
+    -   #### Returning Visitor Goals
+
+        1. As a Returning Visitor, I want to find Out more about The Game and find new challenges.
+  
+
+
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to check to see if there are New updated regarding the game .
+     
+    -   ### Design
+    -   #### Colour Scheme
+        -   Are used 2 main colors (black and white).
+     
+    *   ### Wireframes
+
+    -   Home Page Wireframe - [View](https://github.com/)
+
+    -   Mobile Wireframe - [View](https://github.com/)
+
+    -   Contact Us Page Wireframe - [View](https://github.com/)
+
+# Features
+
+-   Responsive on all device sizes
+
+-   Interactive elements
+
+## Technologies Used
+
+### Languages Used
+
+[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+  
 ## How to play the game
 
-- Battleship-8040 is based on the classic game. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Battleship_(game)).
- In this version, the player choose the ship choosing a number between 1 and 9 max the user have max 9 turns against the computer,
- after the ship is choose the user need to enter a ship column choosing a letter between A and I,
-Hit the ship with X miss the ship with -,
+Battleship-8040 is based on the classic game. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Battleship_(game)).
+In this version, the user choose the ship choosing a number between 1 to 9  the user have 10 turns avalible to discover the computer's battleships,
+after the ship is choose the user need to enter a ship column choosing a letter between A and I,Hit the ship with X miss the ship with -.
 
 The player and the computer then take it in turns to make guesses and try to sink each other's battleships.
 The winner is the player who sinks all of their opponent's battleships first.
@@ -18,9 +60,11 @@ The winner is the player who sinks all of their opponent's battleships first.
 ## Features 
 
 ## Existing Features
--  Generation Random board 
+- Enter your Name
+- Generation Random board 
 - The player can't see where the computer's ships are
 - Ships are randomly placed on both of the lines of the player and computer boards
+- The user can see the battleships just at the end of the game.
 
  <img width="1265" alt="Screenshot 2024-01-01 at 18 14 33" src="https://github.com/giacoren6/battleship8040/assets/142323106/4515bb68-25bc-4ec8-89f4-7ceb53bf9259">
 
