@@ -129,4 +129,6 @@ while not game_over:
  
     if not game_over:
         print('You have ' + str(turns) + ' Remaining turns')
-
+        print('the ship hidden in the board')
+        print(BOARD_GAME_HIDDEN)
+        print('Try Again')
