@@ -112,13 +112,12 @@ The winner is the player who sinks all of their opponent's battleships first.
 # Bugs
 No bugs find it 
 
-## Remaining Bugs
-- No bugs remaining
-- 
 ## Validator Testing
 PEP8
 No errors find in [PEP8online.com](https://pep8ci.herokuapp.com/#)
 
+## Remaining Bugs
+- No bugs remaining
 
 ## Deployment
 - This project was deployed using Code Institute's mock terminal for Heroku.
