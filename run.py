@@ -10,7 +10,7 @@ introduction = 'Welcome to Battleship-8040'
 print(introduction)
 
 input('Press Enter to start the game:')
-print('The battleship is 8 cells long')
+print('The battleship is 9 cells long')
 print('The battleship is hidden in a 9x9 board')
 print('The board is labeled with numbers 1-9 and letters A-I')
 print('You will enter the row and column to hit the battleship')
