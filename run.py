@@ -1,12 +1,10 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+"#storyboard"
 
-#storyboard
 # x for taking the ship and hit battleship
-# ' ' for avalible space
+# ' ' for available space
 # '-' for missed shot
 
+from random import randint
 
 introduction = 'Welcome to Battleship-8040'
 print(introduction)
@@ -25,7 +23,7 @@ print('Good luck')
 name = input('Enter your name:')
 print('Hello ' + name)
 
-from random import randint
+
 """game boards"""
 BOARD_GAME_HIDDEN = [[' '] * 9 for _ in range(9)]
 GAME_GUESS_BOARD = [[' '] * 9 for _ in range(9)]
@@ -44,6 +42,7 @@ letter_for_number = {'A': 0,
 """Function print board"""
 
 print('board of:' + name)
+
 
 def print_board(board):
     print('  A B C D E F G H I')
@@ -68,9 +67,11 @@ def ship_create(board):
 
 
 """Function location ship"""
+
+
 def get_ship_location():
-    while True : 
-        try: 
+    while True:
+        try:
             row = int(input('Enter the row number: 1-9 :'))
             column = input('Enter the column letter: A-I :')
             column = letter_for_number[column.upper()]
@@ -80,10 +81,12 @@ def get_ship_location():
             else:
                 return row - 1, column
         except ValueError:
-            print("Invalid input. Please enter a valid row number and column letter.")
+            print("Invalid input."),
+            ("Please enter a valid.row,number and column letter.")
             continue
         except KeyError:
-            print("Invalid input. Please enter a valid row number and column letter.")
+            print("Invalid input."),
+            ("Please enter a valid row number and column letter.")
 
 
 def count_hit(board):
@@ -94,15 +97,14 @@ def count_hit(board):
                 count += 1
     return count
 
-# Assuming BOARD_GAME_HIDDEN and GAME_GUESS_BOARD are defined somewhere else in the code
-# Assuming ship_create, print_board, get_ship_location, and count_hit are defined functions
+
 ship_create(BOARD_GAME_HIDDEN)
 turns = 10
 game_over = False
 while not game_over and turns > 0:
     print('Welcome to Battleship-8040')
     print_board(GAME_GUESS_BOARD)
-    print('You have ' + str(turns) + ' turns remaining') # type: ignore
+    print('You have ' + str(turns) + ' turns remaining')
     row, column = get_ship_location()
     if GAME_GUESS_BOARD[row][column] == '-':
         print('You already guessed it')
@@ -110,11 +112,10 @@ while not game_over and turns > 0:
     elif BOARD_GAME_HIDDEN[row][column] == 'X':
         print('Congratulations')
         GAME_GUESS_BOARD[row][column] = 'X'
-    
     else:
         print('You Missed')
         GAME_GUESS_BOARD[row][column] = '-'
-    turns -= 1 # type: ignore
+    turns -= 1
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
         game_over = True
@@ -122,7 +123,7 @@ while not game_over and turns > 0:
         print('Game Over. You ran out of turns.')
         game_over = True
     if not game_over:
-        print('You have ' + str(turns) + ' Remaining turns') # type: ignore
+        print('You have ' + str(turns) + ' Remaining turns')
         print('Try Again')
     else:
         print('Game Over')
@@ -132,3 +133,5 @@ while not game_over and turns > 0:
         print_board(GAME_GUESS_BOARD)
         print('Thanks for playing')
         break
+
+
