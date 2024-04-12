@@ -110,8 +110,38 @@ The winner is the player who sinks all of their opponent's battleships first.
 - Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
 - Tested in my local terminal and the Code Institute Heroku terminal
 
+- #### First Time Visitor Goals
+
+    1. As a First Time Visitor, I want to easily understand the main purpose of the Game and understand what Game is it.
+
+        1. The Game is easy to understand for the User/Player.
+        2. The main Goal is made for the Player's to let them interact with the game and find new challenges.
+        3. The Player have to press enter button to start the game, and will come out the rules of the game.
+        4. The Player can write his hown name.
+
+    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the Game.
+
+        1. The Game has been designed to be fluid and never to entrap the Player/User.
+  
+    2. As a First Time Visitor, I want to look for testimonials to understand what their Users/Player's think of them and see if they are trusted.
+
+        - #### Returning Visitor Goals
+
+    1. As a Returning Visitor, I want To do always a better score and find new challeges.
+
+        1. The Computer's board is hide to the Player.
+        2. The Computer's board will come out when the game round finish.
+
+- #### Frequent User Goals
+
+    1. As a Frequent  User, I want to check to see if there are Update to some new different style of the game.
+
+        1. The User/Player would already be comfortable with the Game layout and can easily click the letters and numbers and check the score.
+
 # Bugs
-- No bugs find it 
+- Solved Bugs.
+- All Bugs are Solved.
+- No Bugs Find it.
 
 ## Validator Testing
 PEP8
