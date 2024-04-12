@@ -111,7 +111,7 @@ The winner is the player who sinks all of their opponent's battleships first.
 - Tested in my local terminal and the Code Institute Heroku terminal
 
 # Bugs
-No bugs find it 
+- No bugs find it 
 
 ## Validator Testing
 PEP8
@@ -128,6 +128,8 @@ No errors find in [PEP8online.com](https://pep8ci.herokuapp.com/#)
 -  Set the buildbacks to Python and Nodes in that order
 -  ink the Heroku app to the repository
  o Click on Deploy
+- [Live link here](https://battleship8040-71d219516351.herokuapp.com/)
+
 ## Credits
 - Code Institute for the deployment terminal
 - Wikipedia for the details of the Battleships game
