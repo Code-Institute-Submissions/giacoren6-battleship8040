@@ -89,23 +89,19 @@ The winner is the player who sinks all of their opponent's battleships first.
 <img width="735" alt="Screenshot 2024-04-09 at 23 55 45" src="https://github.com/giacoren6/battleship8040/assets/142323106/83579974-288c-4222-a9cd-d887738f17f0">
 
 
-Future Features 
-- Allow player to select the board size and number of ships manually
-- Allow player to position ships by themselves manually 
-- Have more ships avalible to let expand the game
+## Future Features 
+- Allow player to position ships by themselves manually.
+- Have more ships avalible to let expand the game.
+- Allow the player to let close the game manually and restart the game.
 
-## Technologies Used
-
-### Languages Used
-[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Data Model
-- I decided to use a Board class as my model. The game creates one Board class to hold the player's and
-- the computer's board.
-- The print_board class stores the board size, the letter between A and I ,and the row number,
-- The class ship_create in ship range of 6,
-- class ship_location i've put a row number between 1 to 9,
-- class count_hit and the class ship_create where i've decided to put 10 turns for the game.
+- I decided to use a Board Function as my model. The game creates one Board to hold the player's board.
+- The print_board Funcion stores the board size, the letter between A and I ,and the row number between 1 and 9.
+- The Function ship_create in ship range of 6,
+- The Function ship_location, is in a row number between 1 to 9,
+- The Function count_hit and the Function ship_create where i've decided to put 10 turns for the game.
+- The player win if hit 6 times a battleship.
 
 # Testing
 - I have manually tested this project by doing the following:
@@ -115,11 +111,12 @@ Future Features
 
 # Bugs
 No bugs find it 
+
 ## Remaining Bugs
 - No bugs remaining
+- 
 ## Validator Testing
 PEP8
-<img width="1459" alt="Screenshot 2024-01-08 at 14 37 21" src="https://github.com/giacoren6/battleship8040/assets/142323106/0a9ecebc-9a0b-4342-9490-1457906775e2">
 No errors find in [PEP8online.com](https://pep8ci.herokuapp.com/#)
 
 
