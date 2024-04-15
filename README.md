@@ -64,7 +64,7 @@ The winner is the player who sinks all of their opponent's battleships first.
  - check your score
  - choose the user input
 
-<img width="732" alt="Screenshot 2024-04-09 at 23 41 26" src="https://github.com/giacoren6/battleship8040/assets/142323106/07534470-ffd3-4ec8-b16e-0e79453bab14">
+<img width="730" alt="Screenshot 2024-04-15 at 15 22 36" src="https://github.com/giacoren6/battleship8040/assets/142323106/a6124fc5-9a6d-45b0-b0ea-83e71d737742">
 
   - Once the game finish the player can see where was the ship hidden
 
