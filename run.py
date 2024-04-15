@@ -192,7 +192,7 @@ while not game_over and turns > 0:
     if not game_over:
         print('You have ' + str(turns) + ' Remaining turns')
         print('You have ' + str(score) + ' hits')
-        print('Try Again' + name)
+        print('Try Again:' + name)
     else:
         print('Game Over')
         print('The ship was hidden at:')
