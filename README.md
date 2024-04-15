@@ -52,13 +52,13 @@ The winner is the player who sinks all of their opponent's battleships first.
 ## Features 
 
 ## Existing Features
-- Press enter to start the game 
+- Type enter to start the game 
 - Enter your Name
 - Generation Random board 
 - The player can't see where the computer's ships are
 - Ships are randomly placed on both of the lines of the player and computer boards
 
-<img width="740" alt="Screenshot 2024-04-09 at 20 47 05" src="https://github.com/giacoren6/battleship8040/assets/142323106/706ef957-ab62-4f85-b247-5ae75ad8d76a">
+<img width="733" alt="Screenshot 2024-04-15 at 15 12 53" src="https://github.com/giacoren6/battleship8040/assets/142323106/e84da858-f3c8-4e4d-95e2-872c52a29d9a">
 
  - Play against the computer
  - check your score
