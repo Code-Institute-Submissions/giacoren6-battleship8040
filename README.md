@@ -28,14 +28,6 @@ Here is the live project, [Battleship8040](https://battleship8040-71d219516351.h
     -   #### Colour Scheme
         -   Are used 2 main colors (black and white).
      
-    *   ### Wireframes
-
-    -   Home Page Wireframe - [View](https://github.com/)
-
-    -   Mobile Wireframe - [View](https://github.com/)
-
-    -   Contact Us Page Wireframe - [View](https://github.com/)
-
 # Features
 
 -   Responsive on all device sizes
