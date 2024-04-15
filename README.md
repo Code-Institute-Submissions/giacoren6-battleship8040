@@ -72,7 +72,7 @@ The winner is the player who sinks all of their opponent's battleships first.
 
   - Once the game finish the player can see the proper guess location board
  
-<img width="732" alt="Screenshot 2024-04-09 at 23 57 05" src="https://github.com/giacoren6/battleship8040/assets/142323106/7fb26ad9-f916-415e-b087-2417c3397393">
+<img width="730" alt="Screenshot 2024-04-15 at 15 33 01" src="https://github.com/giacoren6/battleship8040/assets/142323106/0443b8c1-7421-4d0a-a182-e4a32622de56">
 
  - input validation and error
  - the player need to put a number 1 to 9 if are not those will be an error(Invalid input).
