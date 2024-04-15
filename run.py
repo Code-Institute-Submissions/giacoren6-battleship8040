@@ -13,7 +13,9 @@ print(introduction)
 # Instructions to the game and how to play
 
 enter = input('Type Enter to start the game:')
-while not enter:
+while not enter or enter != 'Enter' or enter != 'enter':
+    if enter == 'Enter' or enter == 'enter':
+        break
     print('Invalid input. Try again')
     enter = input('Type Enter to start the game:')
 
@@ -35,12 +37,11 @@ while not name:
 print('Hello ' + name)
 
 
-"""
-game boards
+"""game boards
 BOARD_GAME_HIDDEN is the board with the battleship hidden
-GAME_GUESS_BOARD is the board where the player will guess the location
-of the battleship
+GAME_GUESS_BOARD
 
+is the board where the player will guess the location of the battleship
 """
 BOARD_GAME_HIDDEN = [[' '] * 9 for _ in range(9)]
 GAME_GUESS_BOARD = [[' '] * 9 for _ in range(9)]
@@ -56,14 +57,11 @@ letter_for_number = {'A': 0,
                      }
 
 
-"""
-Function print board
+"""Function print board
 This function will print the board with the battleship hidden
 and the board where the player will guess the location of the battleship
 :param board: list of lists
-:return: None
-
-"""
+:return: None"""
 
 print('board of:' + name)
 
@@ -148,13 +146,9 @@ def count_hit(board):
     return count
 
 
-"""
-ship create
-This will create the battleship on the board
+"""ship create this will create the battleship on the board
 :param BOARD_GAME_HIDDEN: list of lists
-:return: None
-
-"""
+:return: None"""
 
 ship_create(BOARD_GAME_HIDDEN)
 turns = 10
@@ -178,7 +172,7 @@ while not game_over and turns > 0:
     else:
         print('You Missed')
         GAME_GUESS_BOARD[row][column] = '-'
-        print('Try Again:' + name)
+        print('Try Again' + name)
     turns -= 1
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
@@ -192,7 +186,7 @@ while not game_over and turns > 0:
     if not game_over:
         print('You have ' + str(turns) + ' Remaining turns')
         print('You have ' + str(score) + ' hits')
-        print('Try Again:' + name)
+        print('Try Again' + name)
     else:
         print('Game Over')
         print('The ship was hidden at:')
