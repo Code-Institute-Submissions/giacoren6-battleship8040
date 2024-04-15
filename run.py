@@ -162,7 +162,7 @@ while not game_over and turns > 0:
     row, column = get_ship_row_number_column_letter()
     if GAME_GUESS_BOARD[row][column] == '-':
         print('You already guessed it')
-        print('Try Again', + name)
+        print('Try Again:' + name)
         continue
     elif BOARD_GAME_HIDDEN[row][column] == 'X':
         print('Congratulations')
@@ -172,7 +172,7 @@ while not game_over and turns > 0:
     else:
         print('You Missed')
         GAME_GUESS_BOARD[row][column] = '-'
-        print('Try Again' + name)
+        print('Try Again:' + name)
     turns -= 1
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
@@ -186,7 +186,7 @@ while not game_over and turns > 0:
     if not game_over:
         print('You have ' + str(turns) + ' Remaining turns')
         print('You have ' + str(score) + ' hits')
-        print('Try Again' + name)
+        print('Try Again:' + name)
     else:
         print('Game Over')
         print('The ship was hidden at:')
