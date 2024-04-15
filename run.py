@@ -178,7 +178,7 @@ while not game_over and turns > 0:
     else:
         print('You Missed')
         GAME_GUESS_BOARD[row][column] = '-'
-        print('Try Again' + name)
+        print('Try Again:' + name)
     turns -= 1
     if count_hit(GAME_GUESS_BOARD) == 6:
         print('Congrats You Win !!!')
